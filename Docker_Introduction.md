@@ -1,7 +1,17 @@
-# Docker Introduction
+# What is Docker? (build,ship and run)
 
-- Docker is a utility software. It is an Open-Source project that automates the deployment of software application inside containers by providing an additional Layer of abstraction and automataion of OS-level virtualization on linux.
+- Docker is a tool to create,run and deploy applications using containers. It allows developers to packge the application with all types of dependencies and libraries and ship it all as one package
+-It is an Open-Source project that automates the deployment of software application inside containers by providing an additional Layer of abstraction and automataion of OS-level virtualization on linux.
 - Compatible with **Linux** Operating System. So if working on Windows you can pull the box through Vagrant and work on the virtualized environment.
+- In ensures that your application works seamlessly in any environment; be it Development, Test or Production.
+
+# Who uses Docker in the Lifecycle of a Project ?
+
+- **Developer**
+	- It helps developer to build great software and makes him easy to deploy his unit package as a docker image which can run on system administrators.
+	
+- **Sysadmin**
+	- When the unit package is deployed by the developer it needs to be checked in the prod,stage and test environment. Now unlike before the administrator will recieve a docker image which will contain all the dependencies and libraries which will be needed to run the product so docker (present in sysadmin system) will download all the files and libraries which are present in the docker image and then the product will be tested without any missing dependency error.
 
 ## Terminologies
 
