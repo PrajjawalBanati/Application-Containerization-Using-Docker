@@ -5,7 +5,7 @@
 - Compatible with **Linux** Operating System. So if working on Windows you can pull the box through Vagrant and work on the virtualized environment.
 - In ensures that your application works seamlessly in any environment; be it Development, Test or Production.
 
-# Who uses Docker in the Lifecycle of a Project ?
+## Who uses Docker in the Lifecycle of a Project ?
 
 - **Developer**
 	- It helps developer to build great software and makes him easy to deploy his unit package as a docker image which can run on system administrators.
@@ -15,7 +15,7 @@
 	
 	![img](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Introduction(Step-1).JPG)
 	
-# How Docker works?(In a Nutshell)
+## How Docker works?(In a Nutshell)
 
 - First the developers make a docker file which is used to build docker image. 
 - Now when docker image is created then it could be run on different containers as you want.
@@ -23,7 +23,7 @@
 	
 	![img](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Introduction(Step-2).JPG)
 
-# What is an Image?
+## What is an Image?
 
 - The blueprint of our appplication which form the basis of containers. You can take it as a class which is a blueprint of object. 
 - In other words it is text file(Can be said as Docker File) which contains pre-written commands which make multiple layers of the system.
@@ -33,6 +33,7 @@
 	![img](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Introduction(Step-3).JPG)
 
 ## Hello World In Docker
+
 - **Installation Of Docker:-**
 	- For linux operating systems first run the update command.<br>
 		- `sudo apt-get update`
@@ -51,21 +52,4 @@
 		- `docker run hello-world`
 			![img_4](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-3).JPG)
 
-## Commands to run Docker
 
-- `docker pull`:- Pulls the image from docker hub. Generally used when we have to pull multiple images.
-- `docker ps`:- lists the current running containers.
-- `docker ps -a`:- lists the executed conatiners.
-- `docker images`:- lists the images which are being pulled.
-- `docker run **image name/container id** -it`:- runs the container in interactive mode.
-- `docker run **image name/container id** -d`:- runs the conatiner in the backend.
-- `docker run **image name/conatiner id**`:- runs the container and exits after execution.
-- `docker load`:- Loads the image other than docker hub or from a hard disk or pen drive.
-- `docker push`:- 
-- `docker ssh`:-
-
-## Docker States
-
-- start
-- suspend
-- exited
