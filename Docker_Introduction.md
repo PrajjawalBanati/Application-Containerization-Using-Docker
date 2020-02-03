@@ -8,6 +8,16 @@
 - Image- The blueprint of our appplication which form the basis of containers. You can take it as a class which is a blueprint of object. Coming ahead, we will see that image will be stored on hard disk and container will run on RAM.
 - Container- Created from Docker images and run the actual application. We create a container using `docker run`. There is a specific limit upto which we can make container as it can create a overflow situation in RAM and thus can make processes waiting. 
 
+## Hello World In Docker
+- **Installation Of Docker:-**
+	- For linux operating systems first run the update command
+		> sudo apt-get update
+			![img_0](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-1).JPG)
+			![img_1](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-2).JPG)
+			![img_2](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-3).JPG)
+			![img_3](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-4).JPG)
+			![img_4](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-5).JPG)
+
 ## Commands to run Docker
 
 - `docker pull`:- Pulls the image from docker hub. Generally used when we have to pull multiple images.
