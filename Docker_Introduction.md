@@ -10,21 +10,21 @@
 
 ## Hello World In Docker
 - **Installation Of Docker:-**
-	- For linux operating systems first run the update command
+	- For linux operating systems first run the update command.<br>
 		`sudo apt-get update`
 			![img_0](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-1).JPG)
-	- Then install docker.io file by using apt installer
+	- Then install docker.io file by using apt installer.<br>
 		`sudo apt-install docker.io`
 			![img_1](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-2).JPG)
-	- Then search hello world image file in the docker registry by the following command
+	- Then search hello world image file in the docker registry by the following command.<br>
 		`docker search hello`
 			![img_3](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-4).JPG)
-	- Then pull the image from the docker registry using the following command.
+	- Then pull the image from the docker registry using the following command.<br>
 		`docker pull hello-world`
-			![img_2](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-3).JPG)
-	- After the image gets pulled you now can run the image in the container by using the following command.
+			![img_2](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-5).JPG)
+	- After the image gets pulled you now can run the image in the container by using the following command.<br>
 		`docker run hello-world`
-			![img_4](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-5).JPG)
+			![img_4](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-3).JPG)
 
 ## Commands to run Docker
 
