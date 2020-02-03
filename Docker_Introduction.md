@@ -14,11 +14,23 @@
 	- When the unit package is deployed by the developer it needs to be checked in the prod,stage and test environment. Now unlike before the administrator will recieve a docker image which will contain all the dependencies and libraries which will be needed to run the product so docker (present in sysadmin system) will download all the files and libraries which are present in the docker image and then the product will be tested without any missing dependency error.
 	
 	![img](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Introduction(Step-1).JPG)
+	
+# How Docker works?(In a Nutshell)
 
-## Terminologies
+- First the developers make a docker file which is used to build docker image. 
+- Now when docker image is created then it could be run on different containers as you want.
+- The created images can be uploaded on Docker Hub from where the image can pulled and built in a container.
+	
+	![img](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Introduction(Step-2).JPG)
 
-- Image- The blueprint of our appplication which form the basis of containers. You can take it as a class which is a blueprint of object. Coming ahead, we will see that image will be stored on hard disk and container will run on RAM.
-- Container- Created from Docker images and run the actual application. We create a container using `docker run`. There is a specific limit upto which we can make container as it can create a overflow situation in RAM and thus can make processes waiting. 
+# What is an Image?
+
+- The blueprint of our appplication which form the basis of containers. You can take it as a class which is a blueprint of object. 
+- In other words it is text file(Can be said as Docker File) which contains pre-written commands which make multiple layers of the system.
+- For each instruction in the dockerfile a layer is created and it is placed on top of the previous layer.
+- Image can be said as read-only filesystem means the system created is not writable at all. When this image is turned into a container the Docker engine takes the image and adds a read-write filesystem on top.
+
+	![img](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Introduction(Step-3).JPG)
 
 ## Hello World In Docker
 - **Installation Of Docker:-**
@@ -28,6 +40,7 @@
 	- Then install docker.io file by using apt installer.<br>
 		- `sudo apt-install docker.io`
 			![img_1](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-2).JPG)
+- **Running Hello-World Image:-**
 	- Then search hello world image file in the docker registry by the following command.<br>
 		- `docker search hello`
 			![img_3](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-4).JPG)
