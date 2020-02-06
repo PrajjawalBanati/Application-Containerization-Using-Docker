@@ -57,4 +57,38 @@
 		  >	
 			![img_4](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Install(Step-3).JPG)
 
+## What are containers?
+
+## Docker Commands
+
+- > docker search <image_name>
+  >
+- > docker pull <image_name>
+  >
+- > docker run <image_name>
+  >
+- **Running Modes**
+	- Interactive Mode(-it)
+		> docker run -it <image_name> \bin\sh
+		>
+	- Detached Mode(-d)
+		> docker run -it -d <image_name> \bin\sh
+		>
+	- Exited Mode
+		> docker run <image_name>
+		>
+- > docker start -i <container_id>
+  >
+- > docker ps -a
+  >
+- > docker ps 
+  >
+- > docker stop <image_name>
+  >
+- > docker exec -it <container_name> \bin\sh
+  >
+- > docker exec -it <container_name> ls
+  >
+## An Example of running Alpine Image on Docker
+
 
