@@ -90,5 +90,52 @@
 - > docker exec -it <container_name> ls
   >
 ## An Example of running Alpine Image on Docker
+- Searching an Alpine Image On Docker Daemon.
+	- > docker search alpine
+	  >
+![img0](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-1).JPG)
+- Pulling the latest Alpine Image from Docker Daemon.
+	- > docker pull alpine:latest
+	  > 
+![img1](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-2).JPG)
+- Running the image on Docker Engine.
+	- > docker run -it alpine:latest
+	  > 
+![img2](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-3).JPG)
+- Listing all past running containers.
+	- > docker ps -a
+	  > 
+![img3](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-4).JPG)
+- Listed present running containers.
+	- > docker ps
+	  >
+![img4](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-5).JPG)
+- Running alpine image container in detached mode.
+	- > docker run -it -d alpine:latest
+	  >
+![img5](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-6).JPG)
+- Container running in background.
+	- > docker ps
+	>
+![img6](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-7).JPG)
+- Executing linux command on alpine.
+	- > docker exec -it <container_name> <linux_command>
+	>
+![img7](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-8).JPG)
+- Executing linux command on alpine in the backend.
+	- > docker exec -d <container_name> <linux_command>
+	- >  docker exec -it -d <container_name> <linux_command>
+	>
+![img11](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-12).JPG)
+- Access the terminal of container running in the backend.
+	- > docker exec -it <container_name> /bin/sh
+	>
+![img8](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-9).JPG)
+- Stop the container running in the backend.
+	- > docker stop <container_name>
+	>
+![img9](https://github.com/PrajjawalBanati/Application-Containerization-Using-Docker/blob/master/Outputs/Docker_Alpine_Example(Step-10).JPG)
+
+
 
 
